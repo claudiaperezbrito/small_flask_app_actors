@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+
+	<h1>{{ act['Actor'] }}</h1>
+
+	<p>{{ act['Actor'] }} is a {{ act['Gender']}} actor working primarily in the U.S. & Britain whose total box office gross is approximately {{ act['Total_Gross'] }} billion. This person's number one film they've worked on is "{{ act['Num_1_film'] }}", and it grossed approximately {{ act['Gross']}} million.
+
+	</p>
+
+
+	<!-- linking to route for actor list -->
+	<p><a href="{{ url_for('index') }}">Return to the list</a> to select a different actor.</p>
+
+{% endblock %}

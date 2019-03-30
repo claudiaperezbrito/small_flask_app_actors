@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>Bruce Willis</title>
+
+	<!-- note the special href for files in the Flask "static" folder -->
+	<link rel="stylesheet" href="../static/css/main.css">
+
+</head>
+<body>
+
+<div id="container">
+
+  <!-- Jinja2 directives: page contents will go between them -->
+  
+
+
+	<h1>Bruce Willis</h1>
+
+	<p>Bruce Willis is a male actor working primarily in the U.S. & Britain whose total box office gross is approximately $3.33  billion. This person's number one film they've worked on is "Sixth Sense", and it grossed approximately $293.50  million.
+
+	</p>
+
+
+	<!-- linking to route for actor list -->
+	<p><a href="../index.html">Return to the list</a> to select a different actor.</p>
+
+
+
+</div>
+
+</body>
+</html>

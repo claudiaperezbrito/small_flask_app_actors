@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<h1>Lights, Camera & 24 Actors</h1>
+<p> Here is a list of actors from<a href="https://www.boxofficemojo.com/people/?view=Actor&sort=sumgross&p=.htm"> Box Office Mojo</a>.
+<p>Click on an actor.</p>
+
+<!-- pairs is a list that must be sent here by a route function
+
+     The list will contain 45 pairs: a presidency number, and a
+     president's name -->
+
+    <ul>
+    {% for pair in pairs %}
+        <li><a href="{{ url_for( 'detail', num=pair[0] ) }}">{{ pair[1] }}</a></li>
+    {% endfor %}
+    </ul>
+
+{% endblock %}
